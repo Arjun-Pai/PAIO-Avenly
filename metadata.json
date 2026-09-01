@@ -1,0 +1,6 @@
+{
+  "name": "Avenly Hub & Dispenser",
+  "description": "An AI-powered elder care device and smart pill dispenser featuring vital metrics monitoring, medication management, radio, books, video calls, and a built-in Gemini companion.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

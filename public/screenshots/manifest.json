@@ -1,0 +1,104 @@
+{
+  "application": "Avenly Smart Touch Eldercare Hub",
+  "screen_shots_directory": "/public/screenshots",
+  "screens": [
+    {
+      "id": "onboarding",
+      "name": "Onboarding & Language Setup Wizard",
+      "description": "5-step glassmorphic setup wizard featuring 15 regional/international language selection, unrestricted live camera feed, Google Workspace authorization, medical document OCR upload, and emergency contacts.",
+      "path": "/public/screenshots/onboarding.png",
+      "svg_path": "/public/screenshots/onboarding.svg"
+    },
+    {
+      "id": "home_dashboard",
+      "name": "7-Inch Touchscreen Home Dashboard",
+      "description": "Clean eldercare home interface with live dynamic island status, actual activity logs, real-time vitals summary, 5 health widgets (Sleep, Hydration, Activity, Mood, AI status), speed-dial contacts, and draggable control widget.",
+      "path": "/public/screenshots/home_dashboard.png",
+      "svg_path": "/public/screenshots/home_dashboard.svg"
+    },
+    {
+      "id": "health_vitals",
+      "name": "Health Vitals & AI Diagnostics",
+      "description": "Real patient measurements with live Gemini AI clinical reasoning engine, emergency fall detection triggers, and Google Sheets synchronization.",
+      "path": "/public/screenshots/health_vitals.png",
+      "svg_path": "/public/screenshots/health_vitals.svg"
+    },
+    {
+      "id": "medication_desk",
+      "name": "Medication Desk & Dispenser Inventory",
+      "description": "Today's timeline interactive medication schedule, pill shapes and colors, low inventory warning banners, and 20-slot cartridge inventory grid with physical refill triggers.",
+      "path": "/public/screenshots/medication.png",
+      "svg_path": "/public/screenshots/medication.svg"
+    },
+    {
+      "id": "google_calendar",
+      "name": "Google Calendar Monthly Grid View",
+      "description": "7-column interactive monthly grid view for doctor checkups and care appointments synchronized live with Google Calendar API.",
+      "path": "/public/screenshots/google_calendar.png",
+      "svg_path": "/public/screenshots/google_calendar.svg"
+    },
+    {
+      "id": "google_chat",
+      "name": "Google Chat Family Eldercare Space",
+      "description": "Real Google Chat webhook integration allowing family members and caregivers to exchange messages directly in the care circle space.",
+      "path": "/public/screenshots/google_chat.png",
+      "svg_path": "/public/screenshots/google_chat.svg"
+    },
+    {
+      "id": "google_meet",
+      "name": "Google Meet Video Calling & SOS Emergency",
+      "description": "Google Meet video call space creation, prominent red SOS Emergency quick dial, call history log, and senior speed dial for direct doctor and family connections.",
+      "path": "/public/screenshots/google_meet.png",
+      "svg_path": "/public/screenshots/google_meet.svg"
+    },
+    {
+      "id": "music_deezer",
+      "name": "Music & Audio (Deezer API)",
+      "description": "Spotify-style music streaming interface powered by the official Deezer OAuth & search API, featuring top albums, playlists, audio player, and search.",
+      "path": "/public/screenshots/music_deezer.png",
+      "svg_path": "/public/screenshots/home_dashboard.svg"
+    },
+    {
+      "id": "videos_invidious",
+      "name": "Videos Hub (Invidious API)",
+      "description": "Clean video streaming interface built with the Invidious decentralized Youtube API proxy for direct unencrypted video/audio streaming.",
+      "path": "/public/screenshots/videos_invidious.png",
+      "svg_path": "/public/screenshots/home_dashboard.svg"
+    },
+    {
+      "id": "news_newsdata",
+      "name": "Live News Hub (NewsData API)",
+      "description": "Real-time news feed using NewsData.io query endpoints with error-handling, category tabs, search, and article summaries.",
+      "path": "/public/screenshots/news_newsdata.png",
+      "svg_path": "/public/screenshots/home_dashboard.svg"
+    },
+    {
+      "id": "games_suite",
+      "name": "Senior Brain Fitness & Fine Motor Games Suite",
+      "description": "Comprehensive suite with 15 Cognitive & Memory games, 10 Fine Motor Dexterity games, 10 Low-Impact Physical/Mobility games, and 15 Social Language games.",
+      "path": "/public/screenshots/games_suite.png",
+      "svg_path": "/public/screenshots/games_suite.svg"
+    },
+    {
+      "id": "books_googlebooks",
+      "name": "Reading & Books Hub (Google Books API)",
+      "description": "Search millions of books, read descriptions, view real covers, and open Google Books directly.",
+      "path": "/public/screenshots/books_googlebooks.png",
+      "svg_path": "/public/screenshots/home_dashboard.svg"
+    },
+    {
+      "id": "ai_assistant",
+      "name": "Avenly Companion Brain & Voice Assistant",
+      "description": "Powered by Gemini with soothing Web Speech synthesis voice engine, floating dynamic island animations, keyboard input mode, message history log, and Google Sheets schedule derivation.",
+      "path": "/public/screenshots/ai_assistant.png",
+      "svg_path": "/public/screenshots/ai_assistant.svg"
+    },
+    {
+      "id": "settings",
+      "name": "Settings & Device Status",
+      "description": "13 comprehensive settings categories, standby lock screen configuration, live user profile settings, Google Workspace connection status, and test fall trigger diagnostic.",
+      "path": "/public/screenshots/settings.png",
+      "svg_path": "/public/screenshots/settings.svg"
+    }
+  ]
+}

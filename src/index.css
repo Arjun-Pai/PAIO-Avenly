@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer utilities {
+  /* Premium glassmorphism styles */
+  .glass-card {
+    background: #1C1C1E;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .glass-card-hover:hover {
+    background: #2C2C2E;
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Custom Glows */
+  .glow-blue {
+    box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 30px -5px rgba(139, 92, 246, 0.4);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.35);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 30px -2px rgba(239, 68, 68, 0.5);
+  }
+
+  /* Hide scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Heartbeat & Telemetry Animations */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.12); }
+  70% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.3s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes telemetry-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-telemetry {
+  animation: telemetry-pulse 2s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes orb-pulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.08) rotate(180deg);
+    opacity: 1;
+    filter: hue-rotate(30deg) saturate(1.2);
+  }
+}
+
+@keyframes voice-wave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes pill-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(180px) rotate(320deg);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(176px) rotate(350deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(180px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-orb {
+  animation: orb-pulse 8s infinite ease-in-out;
+}
+
+.animate-wave-slow {
+  animation: voice-wave 1.5s infinite ease-in-out;
+}
+
+.animate-pill-drop {
+  animation: pill-fall 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-ring-pulse {
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elderly-Accessible Font Scaling */
+.text-scale-standard {
+  font-size: 16px;
+}
+.text-scale-large {
+  font-size: 19px;
+}
+.text-scale-extra-large {
+  font-size: 22px;
+}
+
+.text-scale-large .text-xs { font-size: 0.9rem !important; line-height: 1.35rem !important; }
+.text-scale-large .text-sm { font-size: 1.05rem !important; line-height: 1.55rem !important; }
+.text-scale-large .text-base { font-size: 1.2rem !important; line-height: 1.75rem !important; }
+.text-scale-large .text-lg { font-size: 1.35rem !important; line-height: 1.95rem !important; }
+.text-scale-large .text-xl { font-size: 1.55rem !important; line-height: 2.15rem !important; }
+.text-scale-large .text-2xl { font-size: 1.85rem !important; line-height: 2.45rem !important; }
+.text-scale-large .text-3xl { font-size: 2.25rem !important; line-height: 2.75rem !important; }
+
+.text-scale-extra-large .text-xs { font-size: 1.05rem !important; line-height: 1.5rem !important; }
+.text-scale-extra-large .text-sm { font-size: 1.25rem !important; line-height: 1.75rem !important; }
+.text-scale-extra-large .text-base { font-size: 1.4rem !important; line-height: 1.95rem !important; }
+.text-scale-extra-large .text-lg { font-size: 1.6rem !important; line-height: 2.2rem !important; }
+.text-scale-extra-large .text-xl { font-size: 1.85rem !important; line-height: 2.45rem !important; }
+.text-scale-extra-large .text-2xl { font-size: 2.2rem !important; line-height: 2.75rem !important; }
+.text-scale-extra-large .text-3xl { font-size: 2.75rem !important; line-height: 3.25rem !important; }
+
+/* Elderly High-Contrast Mode */
+.high-contrast-mode {
+  --tw-bg-opacity: 1;
+}
+.high-contrast-mode .bg-zinc-950,
+.high-contrast-mode .bg-zinc-900,
+.high-contrast-mode .bg-black,
+.high-contrast-mode .glass-card {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+}
+.high-contrast-mode .text-zinc-400,
+.high-contrast-mode .text-zinc-500 {
+  color: #f4f4f5 !important;
+  font-weight: 600 !important;
+}
+.high-contrast-mode .text-zinc-300 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.high-contrast-mode button {
+  border-width: 2px !important;
+  font-weight: 800 !important;
+}
+
+/* Tactile Senior-Friendly Button Affordance */
+.touch-target-senior {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+

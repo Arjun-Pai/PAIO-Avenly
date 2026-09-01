@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600">
+  <rect width="1024" height="600" fill="#090a0f" />
+  <rect x="20" y="20" width="984" height="560" rx="24" fill="#12131a" stroke="#27272a" />
+  <text x="50" y="60" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">Google Chat Family Care Circle Space</text>
+  
+  <rect x="50" y="90" width="924" height="420" rx="16" fill="#18181b" stroke="#27272a" />
+  <rect x="80" y="120" width="500" height="70" rx="14" fill="#1e1b4b" />
+  <text x="100" y="145" fill="#a5b4fc" font-family="sans-serif" font-size="12" font-weight="bold">Preeti Caregiver Leader</text>
+  <text x="100" y="170" fill="#ffffff" font-family="sans-serif" font-size="14">I reviewed dad's blood pressure log from Google Sheets — looking great!</text>
+
+  <rect x="470" y="210" width="480" height="70" rx="14" fill="#064e3b" />
+  <text x="490" y="235" fill="#6ee7b7" font-family="sans-serif" font-size="12" font-weight="bold">Avenly Companion Bot</text>
+  <text x="490" y="260" fill="#ffffff" font-family="sans-serif" font-size="14">Morning dose taken automatically at 08:00 AM.</text>
+
+  <rect x="50" y="520" width="924" height="50" rx="14" fill="#27272a" />
+  <text x="80" y="550" fill="#a1a1aa" font-family="sans-serif" font-size="14">Type a message to family care circle...</text>
+</svg>

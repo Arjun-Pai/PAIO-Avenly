@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600">
+  <rect width="1024" height="600" fill="#090a0f" />
+  <rect x="20" y="20" width="984" height="560" rx="24" fill="#12131a" stroke="#27272a" />
+  <text x="50" y="60" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">Avenly Companion Brain (Gemini 3.5)</text>
+
+  <rect x="50" y="90" width="924" height="400" rx="18" fill="#18181b" stroke="#27272a" />
+  <rect x="80" y="120" width="600" height="70" rx="14" fill="#27272a" />
+  <text x="100" y="145" fill="#a1a1aa" font-family="sans-serif" font-size="12" font-weight="bold">Anand Sharma (User)</text>
+  <text x="100" y="170" fill="#ffffff" font-family="sans-serif" font-size="14">When is my next heart checkup with Dr. Sharma?</text>
+
+  <rect x="280" y="210" width="660" height="90" rx="14" fill="#311b92" />
+  <text x="300" y="235" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">Avenly Companion Brain</text>
+  <text x="300" y="260" fill="#ffffff" font-family="sans-serif" font-size="14">According to your Google Calendar, you have a consultation with Dr. Rajesh Sharma on Thursday at 10:00 AM.</text>
+
+  <rect x="50" y="505" width="924" height="50" rx="14" fill="#27272a" />
+  <text x="80" y="535" fill="#a1a1aa" font-family="sans-serif" font-size="14">Ask Avenly anything or tap microphone for voice query...</text>
+</svg>
